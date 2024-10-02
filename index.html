@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Download Folder</h1>
-    <p>Click the button below to pay 1 INR via UPI.</p>
-    <button id="payNowBtn">Pay Now</button>
-    <a id="downloadLink" href="New folder.zip" style="display: none;">Download Folder</a>
+
+    <div class="container">
+        <h1>Download After Payment</h1>
+        <p>You can download the folder after making a payment of ₹1.</p>
+
+        <!-- Razorpay Button -->
+        <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NfsSXorAEr3yfy" async> </script>
+        </form>
+
+        <!-- Download Section (Initially Hidden) -->
+        <div id="download-section">
+            <a href="/path-to-your-folder.zip" class="download-btn" download>Download Folder</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
