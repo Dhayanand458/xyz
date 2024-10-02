@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Now</title>
+    <title>Download After Payment</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Pay ₹1 to Download the File</h1>
-    <a href="upi://pay?pa=shareanything8-1@okicici&pn=Dan&am=1.00&cu=INR">
-        <button>Pay Now via UPI</button>
-    </a>
+    <h1>Download Folder</h1>
+    <p>Click the button below to pay 1 INR via UPI.</p>
+    <button id="payNowBtn">Pay Now</button>
+    <a id="downloadLink" href="New folder.zip" style="display: none;">Download Folder</a>
+
+    <script src="script.js"></script>
 </body>
 </html>
