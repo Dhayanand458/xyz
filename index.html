@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download After Payment</title>
+    <title>Unlock Folder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Download After Payment</h1>
-        <p>You can download the folder after making a payment of ₹1.</p>
+        <h1>Download Your Folder</h1>
+        <p>The folder is currently locked. Please make a payment of ₹1 to unlock it.</p>
+        
+        <button id="payment-button">Pay ₹1</button>
 
-        <!-- Razorpay Button -->
-        <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NfsSXorAEr3yfy" async> </script>
-        </form>
-
-        <!-- Download Section (Initially Hidden) -->
-        <div id="download-section">
-            <a href="/path-to-your-folder.zip" class="download-btn" download>Download Folder</a>
+        <div id="download-link" style="display:none;">
+            <h2>Your Folder is Unlocked!</h2>
+            <a href="path/to/your/folder.zip" download>Download Folder</a>
         </div>
     </div>
 
